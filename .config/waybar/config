@@ -1,0 +1,104 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 35, // Waybar height (to be removed for auto height)
+    "margin-top": 6,
+    "margin-left": 6,
+    "margin-right": 6,
+    "margin-bottom": 6,
+    
+    "output": ["DP-1", "HDMI-A-2"],
+
+    // Choose the order of the modules
+    "modules-left": ["tray", "custom/updates", "temperature"],
+    "modules-center": ["wlr/workspaces"],
+    "modules-right": ["custom/playerctl", "pulseaudio", "pulseaudio#mic", "clock"],
+
+    // Modules configuration
+     "wlr/workspaces": {
+         "on-click": "activate",
+         "disable-scroll": true,
+         "all-outputs": false,
+         "sort-by-number": true,
+        "format": "{icon}",
+        //"format": "{name}",
+         "format-icons": {
+             "1": "",
+             "2": "",
+             "3": "",
+             "4": "",
+             "5": "",
+             "urgent": "",
+             "focused": "",
+             "default": ""
+         }
+     },
+    
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10,
+        //"show-passive-items": true
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false
+    },
+    //"memory": {
+    //    "format": "{}% "
+    //},
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""]
+    },
+   
+    "pulseaudio": {
+        "scroll-step": 2, // %, can be a float
+        "format": "{icon} {volume} ",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-icons": {
+            "stock image type shit": ["", "", ""],
+            "default": ""
+        },
+        "on-click": "pavucontrol"
+    },
+    "pulseaudio#mic" : {
+        "format": "{format_source}",
+        "format-source": " {volume}",
+        "format-source-muted": " {volume}",
+        "scroll-step": 2,
+        "on-click": "pavucontrol"
+    },
+
+    "custom/updates": {
+    "exec": "paru -Qu | wc -l", 
+    "interval": 3600,
+    "format": " {} " 
+    },
+
+  "custom/playerctl": {
+    "format": "{icon}  <span>{}</span>",
+    "return-type": "json",
+    "max-length": 35,
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} ~ {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click-middle": "playerctl play-pause",
+    "on-click": "playerctl previous",
+    "on-click-right": "playerctl next",
+    "format-icons": {
+      "Playing": "<span foreground='#fff'></span>",
+      "Paused": "<span foreground='#fff'></span>"
+    }
+
+}
+
+}
