@@ -2,7 +2,7 @@ require("user")
 
 vim.opt.clipboard = "unnamedplus"
 
---uncomment if using WSL test
+--uncomment if using WSL 
 
 --vim.g.clipboard = {
 --  name = "win32yank-wsl",
