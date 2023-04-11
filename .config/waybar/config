@@ -10,7 +10,7 @@
     "output": ["DP-1", "HDMI-A-2"],
 
     // Choose the order of the modules
-    "modules-left": ["tray", "custom/updates", "temperature"],
+    "modules-left": ["custom/powermenu", "tray", "custom/updates", "temperature"],
     "modules-center": ["wlr/workspaces"],
     "modules-right": ["custom/playerctl", "pulseaudio", "pulseaudio#mic", "clock"],
 
@@ -99,6 +99,12 @@
       "Paused": "<span foreground='#fff'></span>"
     }
 
-}
+},
+
+  "custom/powermenu": {
+      "format": "   ",
+      "on-click": "rofi -show power-menu -modi power-menu:powermenu"
+  }
 
 }
+
