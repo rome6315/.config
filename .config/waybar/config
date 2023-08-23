@@ -7,7 +7,7 @@
     "margin-right": 6,
     "margin-bottom": 6,
     
-    "output": ["DP-1", "HDMI-A-2"],
+    "output": ["DP-1", "DP-2"],
 
     // Choose the order of the modules
     "modules-left": ["custom/powermenu", "tray", "custom/updates", "temperature"],
