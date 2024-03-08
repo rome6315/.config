@@ -1,5 +1,5 @@
 function Colors(color)
-	color = "everforest" --choose colorscheme 
+	color = "palenightfall" --choose colorscheme 
 	vim.cmd.colorscheme(color)
 
 	-- uncomment for transparecny: 

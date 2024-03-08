@@ -21,6 +21,12 @@ return require('packer').startup(function(use)
 
   use({'folke/tokyonight.nvim'})
 
+  use({'yashranjan1/purple-rain.nvim'})
+
+  use({'JoosepAlviste/palenightfall.nvim'})
+
+  use({'daltonmenezes/aura-theme'})
+
   use({'rose-pine/neovim'})
   --treesitter stuff
   use ({'nvim-treesitter/nvim-treesitter', run =':TSUpdate'})

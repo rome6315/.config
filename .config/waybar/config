@@ -11,11 +11,11 @@
 
     // Choose the order of the modules
     "modules-left": ["custom/powermenu", "tray", "custom/updates", "temperature"],
-    "modules-center": ["wlr/workspaces"],
+    "modules-center": ["hyprland/workspaces"],
     "modules-right": ["custom/playerctl", "pulseaudio", "pulseaudio#mic", "clock"],
 
     // Modules configuration
-     "wlr/workspaces": {
+     "hyprland/workspaces": {
          "on-click": "activate",
          "disable-scroll": true,
          "all-outputs": false,
@@ -32,7 +32,8 @@
              "focused": "",
              "default": ""
          }
-     },
+    },
+
     
     "tray": {
         // "icon-size": 21,
