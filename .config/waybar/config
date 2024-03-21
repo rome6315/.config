@@ -1,7 +1,7 @@
 {
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 35, // Waybar height (to be removed for auto height)
+    "height": 50, // Waybar height (to be removed for auto height)
     "margin-top": 6,
     "margin-left": 6,
     "margin-right": 6,
@@ -97,15 +97,16 @@
     "on-click": "playerctl previous",
     "on-click-right": "playerctl next",
     "format-icons": {
-      "Playing": "<span foreground='#fff'></span>",
-      "Paused": "<span foreground='#fff'></span>"
+      "Playing": "<span foreground='#458588'></span>",
+      "Paused": "<span foreground='#458588'></span>"
     }
 
 },
 
   "custom/powermenu": {
       "format": "   ",
-      "on-click": "rofi -show power-menu -modi power-menu:powermenu"
+      //"on-click": "rofi -show power-menu -modi power-menu:powermenu"
+      "on-click": "~/.config/rofi/powermenu/type-6/powermenu.sh"
   }
 
 }
