@@ -1,9 +1,9 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
    /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
-    font-family: Space Mono Nerd Font;
+    font-family: Hack Nerd Font;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 window#waybar {
@@ -62,10 +62,7 @@ button:hover {
     background-color: #CC241D;
 }
 
-#mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
-}
+
 
 #clock,
 #battery,
@@ -81,6 +78,13 @@ button:hover {
 #custom-media,
 #custom-sep,
 #custom-updates, 
+#custom-browser,
+#custom-filemanager,
+#custom-networkmanager
+#custom-terminal,
+#custom-bitwarden,
+#custom-discord,
+#custom-weather,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -92,10 +96,10 @@ button:hover {
 
 #window,
 #workspaces {
-    border-radius: 5px;
+    border-radius: 12px;
+    box-shadow: 1 1 2 0.5px rgba(0, 0, 0, 0.45) , rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     padding: 0px 10px;
     background-color: #EBDBB2;
-    border: 1px solid #458588;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -111,13 +115,16 @@ button:hover {
 }
 
 #clock {
+    box-shadow: 1 1 2 0.5px rgba(0, 0, 0, 0.45) , rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 12px;
+    border-left: 0px;
     color: #458588;
     background-color: #EBDBB2;
-    border-radius: 5px;
-    border: 1px solid #458588;
+    padding-left: 0px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-right: 5px;
+    padding-left: 10px;
+    margin-right: 15px;
 }
 
 @keyframes blink {
@@ -132,14 +139,38 @@ label:focus {
 }
 
 #cpu {
-    background-color: #EBDBB2;
+    box-shadow: 1 1 2 0.5px rgba(0, 0, 0, 0.45) , rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 12px;
     color: #458588;
-    border-radius: 10px;
+    background-color: #ebdbb2;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
 }
 
 #memory {
-    border-radius: 10px;
+    box-shadow: 1 1 2 0.5px rgba(0, 0, 0, 0.45) , rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 12px;
+    color: #458588;
+    background-color: #ebdbb2;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+
+#network {
+    box-shadow: 1 1 2 0.5px rgba(0, 0, 0, 0.45) , rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 12px;
+    border-left: 0px;
+    color: #458588;
     background-color: #EBDBB2;
+    padding-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    margin-left: 15px;
 }
 
 #disk {
@@ -150,36 +181,28 @@ label:focus {
     background-color: #90b1b1;
 }
 
-#network {
-    border-radius: 10px;
-    background-color: #1e1e1e;
-}
-
-#network.disconnected {
-    border-radius: 10px;
-    background-color: #f53c3c;
-}
-
 #pulseaudio {
+    box-shadow: 1 1 2 0.5px rgba(0, 0, 0, 0.45) , rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 12px;
     background-color: #EBDBB2;
-    border-radius: 5px 0px 0px 5px;
     color: #458588;
-    border: 1px solid #458588;
-    border-right: 0px;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-right: 15px;
 }
 
-#pulseaudio.mic {
+/*#pulseaudio.mic {
     color: #458588;
     margin-right: 15px;
     border-radius: 0px 5px 5px 0px;
-    border: 1px solid #458588;
+    border: 8px inset #726751;
     border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
     padding-left: 0px;
     margin-top: 5px;
     margin-bottom: 5px;
-}
+}*/
 
 #pulseaudio.muted {
     background-color: #90b1b1;
@@ -209,25 +232,15 @@ label:focus {
     background-color: #ffa000;
 }
 
-#custom-updates {
-    border-radius: 5px 0px 0px 5px;
-    color: #458588;
-    background-color: #EBDBB2;
-    border: 1px solid #458588;
-    border-right: 0px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 #temperature {
-    border-radius: 0px 5px 5px 0px;
+    box-shadow: 1 1 2 0.5px rgba(0, 0, 0, 0.45) , rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 12px;
     color: #458588;
     background-color: #EBDBB2;
-    border: 1px solid #458588;
-    border-left: 0px;
-    padding-left: 0px;
+    padding-left: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 15px;
 }
 
 #temperature.critical {
@@ -311,7 +324,10 @@ label:focus {
     color: #458588;
     border-radius: 5px;
     background-color: #EBDBB2;
-    border: 1px solid #458588;
+    border: 8px inset #726751;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
     margin-right: 15px;
     padding-left: 10px;
     padding-right: 10px;
@@ -319,14 +335,26 @@ label:focus {
     margin-bottom: 5px;
 }
 
-#custom-powermenu {
+#custom-updates {
+    box-shadow: 1 1 2 0.5px rgba(0, 0, 0, 0.45) , rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 12px;
     color: #458588;
     padding-left: 10px;
-    border-radius: 5px 0px 0px 5px;
+    padding-right: 5px;
     background-color: #EBDBB2;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 5px;
-    border: 1px solid #458588;
-    border-right: 0px;
+    margin-right: 15px;
+}
+
+#custom-notification {
+    box-shadow: 1 1 2 0.5px rgba(0, 0, 0, 0.45) , rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: #458588;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;
+    background-color: #EBDBB2;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
 }

@@ -6,9 +6,8 @@ if status is-interactive
 
   starship init fish | source #enable starship
 
-  #colorscript random
-  
-  pfetch
+  set FO_NERDFONTS "1" 
+  pfetch 
 
   function fish_user_key_bindings
     fish_vi_key_bindings #use vim bindings

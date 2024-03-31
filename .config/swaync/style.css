@@ -1,0 +1,321 @@
+/* Gruvbox Theme */
+@define-color foreground #ebdbb2; /*blueish color*/
+@define-color foreground-alpha rgba(235, 219, 178, 0.7);
+@define-color background #948669; /* dark cream color */
+@define-color background-alpha rgba(148, 134, 105, 1); /* dark cream color */
+@define-color accent rgba(235, 219, 178, 1); /* cream color */
+@define-color current-line #948669; /* dark cream color */
+@define-color comment rgb(98, 114, 164);
+
+.notification-row {
+  transition: all 200ms ease;
+  outline: none;
+  margin-bottom: 4px;
+  margin-right: 13px;
+  margin-top: 8px;
+  border-radius: 80px;
+}
+
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+	opacity: 1;
+	background: transparent;
+}
+
+.notification-row:focus .notification,
+.notification-row:hover .notification {
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+  border: 0px solid @accent;
+  background: @current-line;
+}
+
+.control-center .notification {
+  box-shadow: none;
+}
+
+.control-center .notification-row {
+	opacity: 0.5;
+	margin: -5px;
+}
+
+.notification {
+  transition: all 200ms ease;
+  border-radius: 8px;
+  margin: 12px 7px 0px 7px;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+
+/* Uncomment to enable specific urgency colors
+.low {
+  background: yellow;
+  padding: 6px;
+  border-radius: 12px;
+}
+.normal {
+  background: green;
+  padding: 6px;
+  border-radius: 12px;
+}
+.critical {
+  background: red;
+  padding: 6px;
+  border-radius: 12px;
+}
+*/
+
+.notification-content {
+  background: transparent;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.close-button {
+  background: @current-line;
+  color: @foreground;
+  text-shadow: none;
+  padding: 0;
+  border-radius: 100%;
+  margin-top: 17px;
+  margin-right: 10px;
+  box-shadow: none;
+  border: none;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.close-button:hover {
+  box-shadow: none;
+  background: @comment;
+  transition: all 0.15s ease-in-out;
+  border: none;
+}
+
+.notification-default-action,
+.notification-action {
+  padding: 4px;
+  margin: 0;
+  box-shadow: none;
+  background: @current-line;
+  border: 2px solid @accent;
+  color: @foreground;
+}
+
+.notification-default-action:hover,
+.notification-action:hover {
+  -gtk-icon-effect: none;
+  background: @current-line;
+}
+
+.notification-default-action {
+  border-radius: 8px;
+}
+
+/* When alternative actions are visible */
+.notification-default-action:not(:only-child) {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.notification-action {
+  border-radius: 0px;
+  border-top: none;
+  border-right: none;
+}
+
+/* add bottom border radius to eliminate clipping */
+.notification-action:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+.notification-action:last-child {
+  border-bottom-right-radius: 8px;
+  border-right: 1px solid @accent;
+}
+
+.image {
+}
+
+.body-image {
+  margin-top: 6px;
+  background-color: @foreground;
+  border-radius: 8px;
+}
+
+.summary {
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  color: @foreground;
+  text-shadow: none;
+}
+
+.time {
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  color: @foreground;
+  text-shadow: none;
+  margin-right: 18px;
+}
+
+.body {
+  font-size: 15px;
+  font-weight: normal;
+  background: transparent;
+  color: @foreground;
+  text-shadow: none;
+}
+
+/* The "Notifications" and "Do Not Disturb" text widget */
+.top-action-title {
+  color: @foreground;
+  text-shadow: none;
+}
+
+.control-center-clear-all {
+  color: @foreground;
+  text-shadow: none;
+  background: @background;
+  box-shadow: none;
+}
+
+.control-center-clear-all:hover {
+  background: @background;
+}
+
+.control-center-dnd {
+  border-radius: 8px;
+  background: @background;
+  border: 1px solid @accent;
+  box-shadow: none;
+}
+
+.control-center-dnd:checked {
+  background: @accent;
+}
+
+.control-center-dnd slider {
+  background: @background;
+  border-radius: 8px;
+}
+
+.control-center {
+  background: @background-alpha;
+  border-radius: 10px;
+  background-clip: border-box;
+  padding: 4px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.7),
+			  0 2px 6px 2px rgba(0, 0, 0, 0.3);
+  color: @foreground;
+  border: 2px solid @accent;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.floating-notifications {
+  background: transparent;
+}
+
+/* Window behind control center and on all other monitors */
+.blank-window {
+  background: transparent;
+}
+
+/*** Widgets ***/
+
+/* Title widget */
+.widget-title {
+  color: @background;
+  background: @foreground-alpha;
+  padding: 5px 10px;
+  margin: 10px 10px 5px 10px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.widget-title>button {
+  font-size: 1rem;
+  color: @foreground;
+  text-shadow: none;
+  background: @background;
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+.widget-title>button:hover {
+  background: rgba(235, 219, 178, 0.1);
+}
+
+/* DND widget */
+.widget-dnd {
+  background: @foreground-alpha;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  border-radius: 5px;
+  font-size: large;
+  color: @background;
+}
+.widget-dnd > switch {
+  font-size: initial;
+  background: @background;
+  box-shadow: none;
+}
+.widget-dnd > switch:checked {
+  background: rgba(235, 219, 178, 0.1);
+}
+.widget-dnd > switch slider {
+  background: @foreground;
+}
+
+/* Label widget */
+.widget-label {
+  margin: 8px;
+  color: @foreground;
+}
+.widget-label > label {
+  font-size: 1.1rem;
+}
+
+/* Mpris widget */
+.widget-mpris {
+  /* The parent to all players */
+}
+.widget-mpris-player {
+  box-shadow: none;
+  padding: 8px;
+  margin: 8px;
+  background-color: @background-alpha;
+  color: @foreground;
+  border: 3px solid @foreground;
+}
+
+.widget-mpris-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.widget-mpris-subtitle {
+  font-size: 1.1rem;
+}
+
+.widget-buttons-grid {
+  font-size: x-large;
+  padding: 5px;
+  margin: 5px 10px 10px 10px;
+  border-radius: 5px;
+  background: @foreground-alpha;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button {
+  margin: 3px;
+  background: @background;
+  border-radius: 5px;
+  color: @foreground;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+  background: @accent;
+  color: @background-alpha;
+}
