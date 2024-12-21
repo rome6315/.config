@@ -1,1 +1,1 @@
-![Screenshot](Pictures/gruvbox-rice-1.png)
+![Screenshot](Pictures/gruvbox-rice/gruvbox-rice-1.png)
