@@ -1,3 +1,6 @@
+*!Switched to NvChad - this config may no longer work!*
+
+
 My neovim configuration. Major credits to @ThePrimeagen, this config is built off of his 30 minute neovim tutorial. If you wish to use this configuration here is a list of pre-requisites:
 
 1. Have packer installed https://github.com/wbthomason/packer.nvim
