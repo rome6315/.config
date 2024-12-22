@@ -14,11 +14,13 @@ if status is-interactive
   end
   #just incase :)
   alias vim='nvim' 
-  alias rewaybar='killall -SIGUSR2 waybar'
+
   # chnaging grep to ripgrep
   alias grep='rg'
 
-  alias config='/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME'
+  alias config='/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME' #bare git repo to push/pull my config
+
+  alias spacehog='du -Sh | sort -rh | head -10' #display top 10 directories that take up most space
 
   # Changing "ls" to "exa"
   alias ls='exa -la --color=always --group-directories-first' # my preferred listing
