@@ -1,0 +1,7 @@
+@define-color transparent rgba(235, 219, 178, 0); /* transparent waybar */
+@define-color bg #EBDBB2; /* background color for the modules */ 
+@define-color text #458588; /* text/icon color */ 
+@define-color shadow1 rgba(0, 0, 0, 0.45); /* this goes first in the box shadow color definition */ 
+@define-color shadow2 rgba(0, 0, 0, 0.2); /* this goes second in the box shadow color definition */
+@define-color focused #eba0ac; /* color for focused workspace */
+@define-color button #7c6f64; /* color for workspace buttons */

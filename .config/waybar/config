@@ -10,7 +10,7 @@
     "output": ["DP-1", "DP-2"],
 
     // Choose the order of the modules
-    "modules-left": ["custom/notification", "network", "temperature", "memory"],
+    "modules-left": ["custom/powermenu", "network", "temperature", "memory"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["custom/updates", "pulseaudio", "clock"],
 
@@ -62,7 +62,7 @@
     },
     "memory": {
         "format": " {used}G",
-        "tooltip-format": "RAM Usage"
+        "tooltip-format": "RAM Usage",
     },
     "temperature": {
         "critical-threshold": 80,
@@ -114,7 +114,6 @@
       "tooltip-format": "Update Counter",
       "exec": "checkupdates | wc -l",
       "interval": 3600,
-      "on-click": " sleep 0.1 && ~/.config/waybar/scripts/update.sh"
   },
 
   "custom/launcher": {
@@ -155,6 +154,26 @@
     "exec": "swaync-client -swb",
     "on-click": "sleep 0.1 && swaync-client -t -sw",
     "escape": true
+  },
+
+  "custom/powermenu": {
+    "format": "  roman",
+    "on-click": "rofi -show power-menu -modi power-menu:powermenu"
+  },
+
+  "custom/browser": {
+    "format": " ",
+    "on-click": "librewolf"
+  },
+
+   "custom/music": {
+    "format": " ",
+    "on-click": "youtube-music"
+  },
+
+  "custom/filebrowser": {
+    "format": "󰉋 ",
+    "on-click": "pcmanfm"
   }
 
 }

@@ -1,0 +1,155 @@
+/* Define the Gruvbox light color palette */
+* {
+    /* Gruvbox light colors */
+    gruvbox-light-bg0:          #fbf1c7; /* overall (deepest) bg color */
+    gruvbox-light-bg0-soft:     #f2e5bc; /* search bar and list tile color */
+    gruvbox-light-bg2:          #d5c4a1;
+    gruvbox-light-fg0:          #282828;
+    gruvbox-light-fg1:          #3c3836;
+    gruvbox-light-gray:         #7c6f64;
+    gruvbox-light-red-dark:     #9d0006;
+    gruvbox-light-red-light:    #cc241d;
+    gruvbox-light-yellow-dark:  #b57614;
+    gruvbox-light-yellow-light: #d79921;
+
+    /* Map the Gruvbox light colors to the Rofi variables */
+    bg0:     @gruvbox-light-bg0; /* overall (deepest) bg color */
+    bg1:     @gruvbox-light-bg0-soft; /* search bar and list tile color */
+    fg0:     @gruvbox-light-fg1;
+
+    accent-color:     @gruvbox-light-gray; /* hovered over list tile */
+    urgent-color:     @gruvbox-light-red-dark;
+
+    background-color:   transparent;
+    text-color:         @fg0; /* text color */
+
+    margin:     0;
+    padding:    0;
+    spacing:    0;
+}
+
+window {
+    location:   center;
+    width:      900px;
+    border-radius: 15px;
+    border-color: @accent-color;
+
+    background-color:   @bg0;
+    padding: 20px;
+}
+
+inputbar {
+    spacing:    8px;
+    padding:    8px;
+    border-radius: 15px;
+
+    background-color:   @bg1;
+}
+
+prompt, element-icon, element-text {
+    vertical-align: 0.5;
+}
+
+entry {
+  enabled: true;
+  placeholder: "Search";
+}
+
+prompt {
+    text-color: @accent-color;
+}
+
+textbox {
+    padding:            8px;
+    background-color:   @bg1;
+}
+
+textbox-prompt-colon {
+  enabled: true;
+  expand: false;
+  str: " ";
+}
+
+listview {
+    enabled:                     true;
+    columns:                     5;
+    lines:                       3;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               false;
+    
+    spacing:                     15px;
+    margin:                      0px;
+    padding:                     10px;
+    border:                      0px solid;
+    cursor:                      "default";
+}
+
+element {
+    enabled:                     true;
+    spacing:                     15px;
+    margin:                      0px;
+    padding:                     20px 10px;
+    border:                      1px solid;
+    border-radius:		 15px;
+    border-color:		 @bg1;
+    orientation:                 vertical;
+    cursor:                      pointer;
+}
+
+element normal normal {
+    text-color: @fg0;
+    background-color: @bg1;
+}
+
+element alternate normal {
+    background-color: @bg1;
+    text-color: @fg0;
+}
+
+element normal urgent {
+    text-color: @urgent-color;
+}
+
+element normal active {
+    text-color: @accent-color;
+}
+
+element alternate active {
+    text-color: @accent-color;
+}
+
+element selected {
+    text-color: @bg0;
+}
+
+element selected normal, element selected active {
+    background-color:   @accent-color;
+}
+
+element selected urgent {
+    background-color:   @urgent-color;
+}
+
+element-icon {
+    size:   1.95em;
+}
+
+element-text {
+    text-color: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+}
+
+configuration {
+    font: "Hack Nerd Font Bold 11";
+    hide-scrollbar: true;
+    show-icons:                 true;
+    display-drun:               "";
+	  drun-display-format:        "{name}";
+}
+

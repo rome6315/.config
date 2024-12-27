@@ -7,7 +7,8 @@ if status is-interactive
   starship init fish | source #enable starship
 
   set FO_NERDFONTS "1" 
-  pfetch 
+
+  nitch #run sys fetch
 
   function fish_user_key_bindings
     fish_vi_key_bindings #use vim bindings
@@ -62,5 +63,6 @@ if status is-interactive
     bind '$' __history_previous_command_arguments
   end
   ##END OF ADDING !! AND !$
-end
 
+# end of file
+end

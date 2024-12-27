@@ -46,24 +46,6 @@
   padding: 0;
 }
 
-/* Uncomment to enable specific urgency colors
-.low {
-  background: yellow;
-  padding: 6px;
-  border-radius: 12px;
-}
-.normal {
-  background: green;
-  padding: 6px;
-  border-radius: 12px;
-}
-.critical {
-  background: red;
-  padding: 6px;
-  border-radius: 12px;
-}
-*/
-
 .notification-content {
   background: transparent;
   padding: 6px;
@@ -303,7 +285,7 @@
 .widget-buttons-grid {
   font-size: x-large;
   padding: 5px;
-  margin: 5px 10px 10px 10px;
+  margin: 5px;
   border-radius: 5px;
   background: @foreground-alpha;
 }
