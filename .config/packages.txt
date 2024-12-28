@@ -114,6 +114,7 @@ vlc
 volumeicon
 vulkan-radeon
 waybar
+waybar-module-pacman-updates-git
 webcord
 wget
 whois
@@ -149,5 +150,6 @@ qtile-extras-git
 timeshift-bin
 ttf-times-new-roman
 visual-studio-code-bin
+waybar-module-pacman-updates-git
 webcord
 youtube-music-bin

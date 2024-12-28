@@ -1,0 +1,38 @@
+@import 'theme.css'; /* import the theme */
+
+window {
+	background: @bg;
+	border-width: 2px;
+	border-radius: 70px;
+	border-color: @border;
+	border-style: solid;
+}
+
+#box {
+  /* Define attributes of the box surrounding icons here */
+  padding: 10px;
+}
+
+#active {
+	/* This is to underline the button representing the currently active window */
+	border-bottom: solid 1px;
+	border-color: transparent; 
+}
+
+button, image {
+	background: none;
+	border-style: none;
+	box-shadow: none;
+}
+
+button {
+	padding: 4px;
+	margin-left: 4px;
+	margin-right: 4px;
+	font-size: 12px;
+}
+
+button:hover {
+	background-color: @dots;
+	border-radius: 12px;
+}

@@ -1,0 +1,5 @@
+@define-color bg #A297D7; /* background for the dock */
+@define-color dots #A48DB0; /* this wont work, to edit the dot color you need to edit the svg file in /usr/share/nwg-dock-hyprland/images/ */
+@define-color shadow1 rgba(0, 0, 0, 0.45); /* colors for box shadows */
+@define-color shadow2 rgba(0,0,0, 0.2);
+@define-color border rgba(84, 98, 174, 0.5); /* color for border */
