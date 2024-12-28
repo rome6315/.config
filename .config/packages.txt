@@ -17,7 +17,6 @@ dnsmasq
 dunst
 efibootmgr
 eza
-fetcho
 firefox
 fish
 git
@@ -93,7 +92,7 @@ qt5-quickcontrols
 qtile
 qtile-extras-git
 ripgrep
-rofi-lbonn-wayland-git
+rofi-wayland
 sddm
 slurp
 smartmontools
@@ -107,7 +106,6 @@ ttf-fira-code
 ttf-font-awesome
 ttf-times-new-roman
 unzip
-vesktop-bin
 vim
 virt-manager
 virt-viewer
@@ -136,7 +134,6 @@ zip
 zram-generator
 brave-bin
 cava
-fetcho
 hyprshade
 hyprshot
 iwgtk
@@ -149,10 +146,8 @@ picom-git
 pipes.sh
 python-pywal16
 qtile-extras-git
-rofi-lbonn-wayland-git
 timeshift-bin
 ttf-times-new-roman
-vesktop-bin
 visual-studio-code-bin
 webcord
 youtube-music-bin
