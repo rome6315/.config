@@ -5,7 +5,10 @@ aura
 baobab
 base
 base-devel
+<<<<<<< HEAD
 bat
+=======
+>>>>>>> a714d65 (add theme switching)
 bind
 bitwarden
 brave-bin
@@ -20,7 +23,10 @@ dnsmasq
 dunst
 efibootmgr
 eza
+<<<<<<< HEAD
 fd
+=======
+>>>>>>> a714d65 (add theme switching)
 firefox
 fish
 git
@@ -96,9 +102,14 @@ qt5-quickcontrols
 qtile
 qtile-extras-git
 ripgrep
+<<<<<<< HEAD
 rofi-wayland
 sddm
 shellcheck
+=======
+rofi-lbonn-wayland-git
+sddm
+>>>>>>> a714d65 (add theme switching)
 slurp
 smartmontools
 starship
@@ -120,8 +131,11 @@ vlc
 volumeicon
 vulkan-radeon
 waybar
+<<<<<<< HEAD
 waybar-module-pacman-updates-git
 waybar-module-pacman-updates-git-debug
+=======
+>>>>>>> a714d65 (add theme switching)
 webcord
 wget
 whois
@@ -156,12 +170,19 @@ picom-git
 pipes.sh
 python-pywal16
 qtile-extras-git
+<<<<<<< HEAD
+=======
+rofi-lbonn-wayland-git
+>>>>>>> a714d65 (add theme switching)
 timeshift-bin
 ttf-times-new-roman
 visual-studio-code-bin
 visual-studio-code-bin-debug
+<<<<<<< HEAD
 waybar-module-pacman-updates-git
 waybar-module-pacman-updates-git-debug
+=======
+>>>>>>> a714d65 (add theme switching)
 webcord
 youtube-music-bin
 youtube-music-bin-debug
