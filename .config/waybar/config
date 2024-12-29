@@ -110,7 +110,8 @@
 
   "custom/updates": {
     "format": "󰇚 {} ",
-    "exec": "pacman -S -u -p --print-format %n,%v | wc -l"
+    "exec": "pacman -S -u -p --print-format %n,%v | wc -l",
+    "interval": 120
 },
 
  
