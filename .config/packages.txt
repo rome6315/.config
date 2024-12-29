@@ -1,5 +1,3 @@
-alacritty
-amd-ucode
 7zip
 alacritty
 amd-ucode
@@ -75,7 +73,6 @@ nwg-look-bin
 openbsd-netcat
 openvpn
 os-prober
-p7zip
 papirus-icon-theme
 paru
 paru-debug
@@ -98,7 +95,6 @@ qtile
 qtile-extras-git
 ripgrep
 rofi-wayland
-rofi-lbonn-wayland-git
 sddm
 slurp
 smartmontools
@@ -122,6 +118,7 @@ volumeicon
 vulkan-radeon
 waybar
 waybar-module-pacman-updates-git
+waybar-module-pacman-updates-git-debug
 webcord
 wget
 whois
@@ -138,8 +135,6 @@ xorg-server
 xorg-xinit
 xorg-xrandr
 youtube-music-bin
-zip
-zram-generator
 youtube-music-bin-debug
 zip
 zram-generator
@@ -161,14 +156,9 @@ qtile-extras-git
 timeshift-bin
 ttf-times-new-roman
 visual-studio-code-bin
-waybar-module-pacman-updates-git
-webcord
-youtube-music-bin
-rofi-lbonn-wayland-git
-timeshift-bin
-ttf-times-new-roman
-visual-studio-code-bin
 visual-studio-code-bin-debug
+waybar-module-pacman-updates-git
+waybar-module-pacman-updates-git-debug
 webcord
 youtube-music-bin
 youtube-music-bin-debug
