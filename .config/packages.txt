@@ -5,6 +5,7 @@ aura
 baobab
 base
 base-devel
+bat
 bind
 bitwarden
 brave-bin
@@ -19,6 +20,7 @@ dnsmasq
 dunst
 efibootmgr
 eza
+fd
 firefox
 fish
 git
@@ -96,6 +98,7 @@ qtile-extras-git
 ripgrep
 rofi-wayland
 sddm
+shellcheck
 slurp
 smartmontools
 starship
