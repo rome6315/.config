@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 alacritty
 amd-ucode
-=======
 7zip
 alacritty
 amd-ucode
 aura
->>>>>>> a714d65 (add theme switching)
 baobab
 base
 base-devel
@@ -73,18 +70,12 @@ nmap
 nodejs-lts-hydrogen
 noto-fonts-emoji
 npm
-<<<<<<< HEAD
-=======
 nwg-dock-hyprland
->>>>>>> a714d65 (add theme switching)
 nwg-look-bin
 openbsd-netcat
 openvpn
 os-prober
-<<<<<<< HEAD
 p7zip
-=======
->>>>>>> a714d65 (add theme switching)
 papirus-icon-theme
 paru
 paru-debug
@@ -106,11 +97,8 @@ qt5-quickcontrols
 qtile
 qtile-extras-git
 ripgrep
-<<<<<<< HEAD
 rofi-wayland
-=======
 rofi-lbonn-wayland-git
->>>>>>> a714d65 (add theme switching)
 sddm
 slurp
 smartmontools
@@ -128,18 +116,12 @@ vim
 virt-manager
 virt-viewer
 visual-studio-code-bin
-<<<<<<< HEAD
-=======
 visual-studio-code-bin-debug
->>>>>>> a714d65 (add theme switching)
 vlc
 volumeicon
 vulkan-radeon
 waybar
-<<<<<<< HEAD
 waybar-module-pacman-updates-git
-=======
->>>>>>> a714d65 (add theme switching)
 webcord
 wget
 whois
@@ -156,15 +138,12 @@ xorg-server
 xorg-xinit
 xorg-xrandr
 youtube-music-bin
-<<<<<<< HEAD
 zip
 zram-generator
-=======
 youtube-music-bin-debug
 zip
 zram-generator
 aura
->>>>>>> a714d65 (add theme switching)
 brave-bin
 cava
 hyprshade
@@ -179,14 +158,12 @@ picom-git
 pipes.sh
 python-pywal16
 qtile-extras-git
-<<<<<<< HEAD
 timeshift-bin
 ttf-times-new-roman
 visual-studio-code-bin
 waybar-module-pacman-updates-git
 webcord
 youtube-music-bin
-=======
 rofi-lbonn-wayland-git
 timeshift-bin
 ttf-times-new-roman
@@ -195,4 +172,3 @@ visual-studio-code-bin-debug
 webcord
 youtube-music-bin
 youtube-music-bin-debug
->>>>>>> a714d65 (add theme switching)
