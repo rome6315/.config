@@ -5,3 +5,148 @@
 @define-color shadow2 rgba(0, 0, 0, 0.2); /* this goes second in the box shadow color definition */
 @define-color focused #eba0ac; /* color for focused workspace */
 @define-color button #7c6f64; /* color for workspace buttons */
+
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+   /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
+    font-family: Hack Nerd Font;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: @transparent; 
+    border-radius: 5px;
+}
+
+#workspaces button.active {
+    color: @text;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: @button;
+    margin-right: 5px;
+}
+
+#workspaces button.focused {
+    color: @bg;
+    background: @focused;
+    border-radius: 10px;
+}
+
+#workspaces {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 0px -3px 0px inset;
+    border-radius: 12px;
+    background-color: @bg;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#clock {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 0px -3px 0px inset;
+    border-radius: 12px;
+    border-left: 0px;
+    color: @text;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+}
+
+
+#memory {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 0px -3px 0px inset;
+    border-radius: 12px;
+    background-color: @bg;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#network {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 0px -3px 0px inset;
+    border-radius: 12px;
+    background-color: @bg;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#pulseaudio {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 0px -3px 0px inset;
+    border-radius: 12px;
+    background-color: @bg;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#pulseaudio.muted {
+    background-color: @bg;
+}
+
+#temperature {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 0px -3px 0px inset;
+    border-radius: 12px;
+    background-color: @bg;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-updates {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 0px -3px 0px inset;
+    border-radius: 12px;
+    color: @text;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+#custom-notification {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 0px -3px 0px inset;
+    color: @text;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+#custom-powermenu {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 0px -3px 0px inset;
+    border-radius: 12px;
+    color: @text;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
