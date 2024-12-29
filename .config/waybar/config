@@ -10,7 +10,7 @@
     "output": ["DP-1", "DP-2"],
 
     // Choose the order of the modules
-    "modules-left": ["custom/powermenu", "network", "temperature", "memory"],
+    "modules-left": ["custom/powermenu", "network", "custom/dotfiles"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["custom/updates", "pulseaudio", "clock"],
 
@@ -108,10 +108,16 @@
 
 },
 
-  "custom/updates": {
-    "format": "󰇚 {} ",
-    "exec": "pacman -S -u -p --print-format %n,%v | wc -l",
-    "interval": 120
+// uses the waybar-module-pacman-git aur package
+"custom/updates": {
+    "format": "{} {icon}",
+    "return-type": "json",
+    "format-icons": {
+        "has-updates": "󰇚 ",
+        "updated": " "
+    },
+    "exec-if": "which waybar-module-pacman-updates",
+    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
 },
 
  
@@ -174,6 +180,13 @@
   "custom/filebrowser": {
     "format": "󰉋 ",
     "on-click": "pcmanfm"
-  }
+  },
 
+// check status of dotfile's (if they need pushed or not)
+  "custom/dotfiles": {
+    "format": "{}",
+    "interval": 30,
+    "exec": "~/.config/waybar/scripts/dotfile_status.sh 2> /dev/null",
+    "return-type": "json"
+  }
 }
