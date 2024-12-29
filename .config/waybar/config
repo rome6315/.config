@@ -185,7 +185,7 @@
 // check status of dotfile's (if they need pushed or not)
   "custom/dotfiles": {
     "format": "{}",
-    "interval": 30,
+    "interval": 10,
     "exec": "~/.config/waybar/scripts/dotfile_status.sh 2> /dev/null",
     "return-type": "json"
   }
