@@ -6,7 +6,14 @@ export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export EDITOR=nvim
 ##### END ENVIRONMENT VARS #####
 
+##### OPTIONS #####
+unsetopt BEEP # annoying
+setopt appendhistory # append to history instead of overwrite/prepend
+##### END OPTIONS #####
+
+
 ##### ALIAS'S #####
+
 #just incase :)
 alias vim='nvim' 
 
@@ -34,17 +41,24 @@ alias rm='rm -i'
 ##### END ALIAS'S #####
 
 
+##### KEYBINDS #####
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+##### END KEYBINDS #####
+
+
 ##### HISTORY SETTINGS #####
 HISTSIZE=10000              # The maximum number of history entries to keep in memory
 SAVEHIST=10000              # The maximum number of history entries to save in the history file
 HISTFILE=~/.zsh_history      # Path to the history file
-setopt appendhistory
 ##### END HISTORY SETTINGS #####
 
 
 ##### PLUGINS #####
 nitch
 eval "$(starship init zsh)"
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $HOME/.config/zsh/plugins/zsh-vi-mode/zsh-vi-mode.zsh
 ##### END PLUGINS #####
