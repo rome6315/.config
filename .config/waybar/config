@@ -1,0 +1,178 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 50, // Waybar height (to be removed for auto height)
+    "margin-top": 6,
+    "margin-left": 6,
+    "margin-right": 6,
+    "margin-bottom": 6,
+    
+    "output": ["DP-1", "DP-2"],
+
+    // Choose the order of the modules
+    "modules-left": ["custom/powermenu", "network", "temperature", "memory"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["custom/updates", "pulseaudio", "clock"],
+
+    // Modules configuration
+     "hyprland/workspaces": {
+         "on-click": "activate",
+         "disable-scroll": true,
+         "all-outputs": false,
+         "sort-by-number": true,
+        "format": "{icon}",
+        //"format": "{name}",
+         "format-icons": {
+             "active": "󰮯",
+             "urgent": "",
+             "focused": "",
+             "default": ""
+         }
+    },
+
+  "hyprland/window": {
+        "format": "  {}",
+        "separate-outputs": true
+    },
+
+  "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%)  ",
+        "format-ethernet": "{ifname} 󰈀",
+        "tooltip-format": "{ipaddr}/{cidr} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "on-click": "iwgtk"
+    },
+
+    
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10,
+        //"show-passive-items": true
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "format": "{:%I:%M %p - %a, %b %d %Y}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    },
+    "cpu": {
+        "format": "{usage}%  ",
+        "tooltip-format": "CPU Usage"
+    },
+    "memory": {
+        "format": " {used}G",
+        "tooltip-format": "RAM Usage",
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C {icon}",
+        "tooltip-format": "CPU Temp",
+        "format-icons": ["", "", ""],
+        "on-click": "conky"
+    },
+   
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon}  {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+
+  "custom/playerctl": {
+    "format": "{icon}  <span>{}</span>",
+    "return-type": "json",
+    "max-length": 35,
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} ~ {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click-middle": "playerctl play-pause",
+    "on-click": "playerctl previous",
+    "on-click-right": "playerctl next",
+    "format-icons": {
+      "Playing": "<span foreground='#458588'></span>",
+      "Paused": "<span foreground='#458588'></span>"
+    }
+
+},
+
+  "custom/updates": {
+    "format": "󰇚 {} ",
+    "exec": "pacman -S -u -p --print-format %n,%v | wc -l"
+},
+
+ 
+
+  "custom/launcher": {
+    "tooltip-format": "Notification Center",
+    "format": "{icon} ",
+    "format-icons": {
+      "notification": "<span foreground='#458588'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='#458588'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='#458588'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='#458588'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "escape": true
+  },
+
+  "custom/notification": {
+    "tooltip-format": "Notification Center",
+    "format": "{icon}  roman",
+    "format-icons": {
+      "notification": "<span foreground='#458588'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": " <span foreground='#458588'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='#458588'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='#458588'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "escape": true
+  },
+
+  "custom/powermenu": {
+    "format": "  roman",
+    "on-click": "rofi -show power-menu -modi power-menu:powermenu"
+  },
+
+  "custom/browser": {
+    "format": " ",
+    "on-click": "librewolf"
+  },
+
+   "custom/music": {
+    "format": " ",
+    "on-click": "youtube-music"
+  },
+
+  "custom/filebrowser": {
+    "format": "󰉋 ",
+    "on-click": "pcmanfm"
+  }
+
+}
