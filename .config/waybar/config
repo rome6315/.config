@@ -12,7 +12,7 @@
     // Choose the order of the modules
     "modules-left": ["custom/powermenu", "network", "custom/dotfiles"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/updates", "pulseaudio", "clock"],
+    "modules-right": ["memory", "custom/updates", "pulseaudio", "clock"],
 
     // Modules configuration
      "hyprland/workspaces": {
@@ -53,7 +53,7 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "format": "{:%I:%M %p - %a, %b %d %Y}",
+        "format": "{:%I:%M %p - %a, %b %d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
     "cpu": {
