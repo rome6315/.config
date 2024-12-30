@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Set the path to your Git repository
 REPO_PATH="$HOME/.config"
 
@@ -19,16 +20,13 @@ unstaged=$(git --git-dir=$REPO_PATH --work-tree "$HOME" diff --numstat | \
 # Build the status string
 status=""
 
-if [[ $staged -gt 0 ]]; then
-  # If there are unstaged changes, add them first with a space
-  if [[ $unstaged -gt 0 ]]; then
-    status+="  $unstaged unstaged changes"  # spacing so the symbol doesn't collide with the word "changes" from staged
-  fi
-
-  # Now add the staged changes
-  status+="  $staged staged changes"
+if [[ $unstaged -gt 0 && $staged -gt 0 ]]; then
+  status+=" $unstaged unstaged changes  $staged staged changes" # If both staged and unstaged changes, only display each once
+elif [[ $unstaged -gt 0 && $staged -eq 0 ]]; then
+  status+=" $unstaged unstaged changes" # If only unstaged changes, don't display staged
+elif [[ $unstaged -eq 0 && $staged -gt 0 ]]; then
+  status+=" $staged staged changes" # If only staged changes, don't display unstaged
 fi
-
 
 # Default message if everything is clean
 if [[ -z $status ]]; then
@@ -37,3 +35,4 @@ fi
 
 # Output for Waybar
 echo "{\"text\": \"$status\", \"tooltip\": \"Git Repository: $REPO_PATH - Branch: $branch\"}"
+
