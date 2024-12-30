@@ -3,3 +3,41 @@
 @define-color shadow1 rgba(0, 0, 0, 0.45); /* colors for box shadows */
 @define-color shadow2 rgba(0,0,0, 0.2);
 @define-color border rgba(84, 98, 174, 0.5); /* color for border */
+
+
+window {
+	background: @bg;
+	border-width: 2px;
+	border-radius: 70px;
+	border-color: @border;
+	border-style: solid;
+}
+
+#box {
+  /* Define attributes of the box surrounding icons here */
+  padding: 10px;
+}
+
+#active {
+	/* This is to underline the button representing the currently active window */
+	border-bottom: solid 1px;
+	border-color: transparent; 
+}
+
+button, image {
+	background: none;
+	border-style: none;
+	box-shadow: none;
+}
+
+button {
+	padding: 4px;
+	margin-left: 4px;
+	margin-right: 4px;
+	font-size: 12px;
+}
+
+button:hover {
+	background-color: @dots;
+	border-radius: 12px;
+}

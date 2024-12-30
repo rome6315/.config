@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 # echo the themes import to theme.css, which is read in by style.css
-echo "@import 'themes/$1.css';" > $HOME/.config/nwg-dock-hyprland/theme.css
+echo "@import 'themes/$1.css';" > $HOME/.config/nwg-dock-hyprland/style.css
 
 # restart nwg-dock-hyprland so the new colorscheme loads
 killall nwg-dock-hyprland
