@@ -120,6 +120,13 @@
     "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
 },
 
+// my custom script - can never figure out why it says 0 updates on monitor 2
+"custom/update": {
+    "format": "󰇚 {} ",
+    "return-type": "json",
+    "interval": "60",
+    "exec": "~/.config/waybar/scripts/update.sh"
+},
  
 
   "custom/launcher": {
@@ -164,7 +171,7 @@
 
   "custom/powermenu": {
     "format": "  roman",
-    "on-click": "rofi -show power-menu -modi power-menu:powermenu"
+    "on-click": "rofi -show power-menu -modi power-menu:~/.local/bin/powermenu"
   },
 
   "custom/browser": {

@@ -1,6 +1,7 @@
 # zsh config
 
 ##### ENVIRONMENT VARS #####
+export PATH="$HOME/.local/bin:$PATH"
 export TERM=xterm-256color
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export EDITOR=nvim
