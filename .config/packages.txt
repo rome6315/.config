@@ -70,7 +70,7 @@ nodejs-lts-hydrogen
 noto-fonts-emoji
 npm
 nwg-dock-hyprland
-nwg-look-bin
+nwg-look
 openbsd-netcat
 openvpn
 os-prober
@@ -151,7 +151,6 @@ hyprshade
 hyprshot
 iwgtk
 librewolf-bin
-nwg-look-bin
 paru
 paru-debug
 pfetch
