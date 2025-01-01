@@ -32,6 +32,16 @@ elif [[ "$1" == "Purple Abyss" ]]; then
   $scripts/cava_theme.sh "purple_abyss"
   $scripts/rofi_theme.sh "purple_abyss"
   $scripts/dunst_theme.sh "purple_abyss"
+
+elif [[ "$1" == "Mugetsu" ]]; then
+  $scripts/wallpaper_theme.sh "mugetsu.jpg"
+  $scripts/waybar_theme.sh "mugetsu"
+  $scripts/hyprland_theme.sh "mugetsu"
+  $scripts/kitty_theme.sh "Mugetsu"
+  $scripts/starship_theme.sh "mugetsu"
+  $scripts/cava_theme.sh "mugetsu"
+  $scripts/rofi_theme.sh "mugetsu"
+  $scripts/dunst_theme.sh "mugetsu"
 fi
 
 notify-send -t 3000 "Changed theme to $1" # let user know theme has been changed, erase notification after 3 seconds

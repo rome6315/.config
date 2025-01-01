@@ -1,0 +1,145 @@
+@define-color transparent rgba(235, 219, 178, 0); /* transparent waybar */
+@define-color bg #c2c2c2; /* background color for the modules */ 
+@define-color text #0d0d0d; /* text/icon color */ 
+@define-color border #0d0d0d;
+@define-color focused #0d0d0d; /* color for focused workspace */
+@define-color button #90908F; /* color for workspace buttons */
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+   /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
+    font-family: Hack Nerd Font;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: @transparent; 
+    border-radius: 5px;
+}
+
+#workspaces button.active {
+    color: @text;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: @button;
+    margin-right: 5px;
+}
+
+#workspaces button.focused {
+    color: @bg;
+    background: @focused;
+    border-radius: 10px;
+}
+
+#workspaces {
+    border: 2px solid;
+    border-color: @border;
+    border-radius: 0px 12px 0px 12px;
+    background-color: @bg;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#clock {
+    border: 2px solid;
+    border-color: @border;
+    border-radius: 0px 12px 0px 12px;
+    color: @text;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+}
+
+
+#memory {
+    border: 2px solid;
+    border-color: @border;
+    border-radius: 12px 0px 12px 0px;
+    background-color: @bg;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#network {
+    border: 2px solid;
+    border-color: @border;
+    border-radius: 0px 12px 0px 12px;
+    background-color: @bg;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#pulseaudio {
+    border: 2px solid;
+    border-color: @border;
+    border-radius: 12px 0px 12px 0px;
+    background-color: @bg;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#pulseaudio.muted {
+    background-color: @bg;
+}
+
+#custom-updates {
+    border: 2px solid;
+    border-color: @border;
+    border-radius: 0px 12px 0px 12px;
+    color: @text;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+#custom-powermenu {
+    border: 2px solid;
+    border-color: @border;
+    border-radius: 12px 0px 12px 0px;
+    color: @text;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-dotfiles {
+    border: 2px solid;
+    border-color: @border;
+    border-radius: 12px 0px 12px 0px;
+    color: @text;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

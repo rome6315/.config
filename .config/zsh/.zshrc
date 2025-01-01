@@ -55,7 +55,6 @@ SAVEHIST=10000              # The maximum number of history entries to save in t
 HISTFILE=~/.zsh_history      # Path to the history file
 ##### END HISTORY SETTINGS #####
 
-
 ##### PLUGINS #####
 nitch # run system fetch
 eval "$(starship init zsh)" # init prompt config
