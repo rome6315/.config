@@ -22,6 +22,16 @@ elif [[ "$1" == "Peaceful Pond" ]]; then
   $scripts/cava_theme.sh "peaceful_pond"
   $scripts/rofi_theme.sh "peaceful_pond"
   $scripts/dunst_theme.sh "peaceful_pond"
+
+elif [[ "$1" == "Purple Abyss" ]]; then
+  $scripts/wallpaper_theme.sh "purple-abyss.jpg"
+  $scripts/waybar_theme.sh "purple_abyss"
+  $scripts/hyprland_theme.sh "purple_abyss"
+  $scripts/kitty_theme.sh "Purple Abyss"
+  $scripts/starship_theme.sh "purple_abyss"
+  $scripts/cava_theme.sh "purple_abyss"
+  $scripts/rofi_theme.sh "purple_abyss"
+  $scripts/dunst_theme.sh "purple_abyss"
 fi
 
 notify-send -t 3000 "Changed theme to $1" # let user know theme has been changed, erase notification after 3 seconds

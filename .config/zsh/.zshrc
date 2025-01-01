@@ -1,10 +1,9 @@
 # zsh config
 
 ##### ENVIRONMENT VARS #####
-export PATH="$HOME/.local/bin:$PATH"
 export TERM=xterm-256color
-export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
-export EDITOR=nvim
+export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml # change starship config location
+export EDITOR=nvim # neovim
 ##### END ENVIRONMENT VARS #####
 
 ##### OPTIONS #####
@@ -27,6 +26,8 @@ alias cat='bat' # changing cat to bat
 alias config='/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME' #bare git repo to push/pull my config
 
 alias spacehog='du -Sh | sort -rh | head -10' #display top 10 directories that take up most space
+
+alias nnn='nnn -C' # start nnn using terminals 8 colors
 
 # Changing "ls" to "eza", got these from DistroTube
 alias ls='eza -la --color=always --group-directories-first --icons=always' # my preferred listing
@@ -56,8 +57,10 @@ HISTFILE=~/.zsh_history      # Path to the history file
 
 
 ##### PLUGINS #####
-nitch
-eval "$(starship init zsh)"
+nitch # run system fetch
+eval "$(starship init zsh)" # init prompt config
+source <(fzf --zsh) # Set up fzf key bindings and fuzzy completion
+# load history and highlighting plugins
 source $HOME/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.config/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh

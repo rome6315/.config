@@ -8,18 +8,6 @@ $directory\
 $git_branch\
 $git_status\
 [](bg:#b57614 fg:#b57614)\
-$c\
-$elixir\
-$elm\
-$golang\
-$gradle\
-$haskell\
-$java\
-$julia\
-$nodejs\
-$nim\
-$python\
-$rust\
 [ ](fg:#b57614)\
 """
 

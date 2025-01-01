@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# this file is used for previewing files in lf
+draw() {
+  kitten icat --stdin no --transfer-mode file --place "${w}x${h}@${x}x${y}" "$1" </dev/null >/dev/tty
+  exit 1
+}
+
+file="$1"
+w="$2"
+h="$3"
+x="$4"
+y="$5"
+
+case "$(file -Lb --mime-type "$file")" in 
+  image/*)
+    draw "$file"
+    ;;
+  video/*)
+    # vidthumb is from here:
+    # https://raw.githubusercontent.com/duganchen/kitty-pistol-previewer/main/vidthumb
+    draw "$(vidthumb "$file")"
+    ;;
+esac
+
+pistol "$file" # if its not an image, fall back to using pistol to display (installed from aur pistol-bin)

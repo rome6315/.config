@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# this file's purpose is that when you are scrolling through image previews and go too fast, the old images will have like part of them still showing over top or underneath the new images. this file ensures that doesn't happen
+exec kitten icat --clear --stdin no --transfer-mode file </dev/null >/dev/tty

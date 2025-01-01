@@ -15,6 +15,7 @@ cava
 clang
 cmatrix
 conky
+discord-canary
 dnsmasq
 dunst
 efibootmgr
@@ -75,13 +76,10 @@ openbsd-netcat
 openvpn
 os-prober
 papirus-icon-theme
-paru
-paru-debug
 pavucontrol
 pcmanfm
 pfetch
 picom-git
-pipes.sh
 pipewire
 pipewire-alsa
 pipewire-jack
@@ -91,7 +89,6 @@ postgresql-libs
 python-pyquery
 python-pywal16
 qemu-desktop
-qt5-quickcontrols
 qtile
 qtile-extras-git
 ripgrep
@@ -120,8 +117,6 @@ vlc
 volumeicon
 vulkan-radeon
 waybar
-waybar-module-pacman-updates-git
-waybar-module-pacman-updates-git-debug
 wget
 whois
 wireless_tools
@@ -147,15 +142,13 @@ zsh-syntax-highlighting
 aura
 brave-bin
 cava
+discord-canary
 hyprshade
 hyprshot
 iwgtk
 librewolf-bin
-paru
-paru-debug
 pfetch
 picom-git
-pipes.sh
 python-pywal16
 qtile-extras-git
 timeshift-bin
@@ -163,7 +156,5 @@ ttf-times-new-roman
 vesktop-bin
 visual-studio-code-bin
 visual-studio-code-bin-debug
-waybar-module-pacman-updates-git
-waybar-module-pacman-updates-git-debug
 youtube-music-bin
 youtube-music-bin-debug
