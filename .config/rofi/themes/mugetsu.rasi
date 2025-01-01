@@ -1,25 +1,21 @@
-/* Define the Purple Abyss color palette */
+/* Define the Mugetsu color palette */
 * {
-    /* Peaceful Pond colors */
-    gruvbox-light-bg0:          #c2c2c2; /* overall (deepest) bg color */
-    gruvbox-light-bg0-soft:     #c2c2c2; /* list tile color */
-    gruvbox-light-bg2:          #0d0d0d; /* search bar border */
-    gruvbox-light-fg0:          #c5c7ca; 
-    gruvbox-light-fg1:          #0d0d0d; /* text color */
-    gruvbox-light-gray:         #0d0d0d; /* hovered over list tile */
-    gruvbox-light-red-dark:     #0d0d0d; /* urgent color */
-    gruvbox-light-red-light:    #cc241d;
-    gruvbox-light-yellow-dark:  #b57614;
-    gruvbox-light-yellow-light: #d79921;
+    /* Mugetsu colors */
+    overall-bg:          #c2c2c2; /* overall (deepest) bg color */
+    list-tile:     #c2c2c2; /* list tile color */
+    search-bar-border:          #0d0d0d; /* search bar border */ 
+    text:          #0d0d0d; /* text color */
+    hover-tile:         #0d0d0d; /* hovered over list tile */
+    urgent:     #0d0d0d; /* urgent color */
 
-    /* Map the Gruvbox light colors to the Rofi variables */
-    bg0:     @gruvbox-light-bg0; /* overall (deepest) bg color */
-    bg1:     @gruvbox-light-bg0-soft; /* search bar and list tile color */
-    fg0:     @gruvbox-light-fg1;
-    border:	@gruvbox-light-bg2;
+    /* Map the Mugetsu colors to the Rofi variables */
+    bg0:     @overall-bg; /* overall (deepest) bg color */
+    bg1:     @list-tile; /* search bar and list tile color */
+    fg0:     @text;
+    border:	@search-bar-border;
 
-    accent-color:     @gruvbox-light-gray; /* hovered over list tile */
-    urgent-color:     @gruvbox-light-red-dark;
+    accent-color:     @hover-tile; /* hovered over list tile */
+    urgent-color:     @urgent;
 
     background-color:   transparent;
     text-color:         @fg0; /* text color */

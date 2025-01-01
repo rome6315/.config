@@ -1,24 +1,18 @@
 /* Define the Peaceful Pond color palette */
 * {
     /* Peaceful Pond colors */
-    gruvbox-light-bg0:          #A297D7; /* overall (deepest) bg color */
-    gruvbox-light-bg0-soft:     #7486B6; /* search bar and list tile color */
-    gruvbox-light-bg2:          #d5c4a1;
-    gruvbox-light-fg0:          #c5c7ca; 
-    gruvbox-light-fg1:          #c5c7ca; /* text color */
-    gruvbox-light-gray:         #92709F; /* hovered over list tile */
-    gruvbox-light-red-dark:     #9d0006;
-    gruvbox-light-red-light:    #cc241d;
-    gruvbox-light-yellow-dark:  #b57614;
-    gruvbox-light-yellow-light: #d79921;
+    overall-bg:          #A297D7; /* overall (deepest) bg color */
+    search-list:     #7486B6; /* search bar and list tile color */
+    text:          #c5c7ca; /* text color */
+    hover-tile:         #92709F; /* hovered over list tile */
 
-    /* Map the Gruvbox light colors to the Rofi variables */
-    bg0:     @gruvbox-light-bg0; /* overall (deepest) bg color */
-    bg1:     @gruvbox-light-bg0-soft; /* search bar and list tile color */
-    fg0:     @gruvbox-light-fg1;
+    /* Map the Peaceful Pond colors to the Rofi variables */
+    bg0:     @overall-bg; /* overall (deepest) bg color */
+    bg1:     @search-list; /* search bar and list tile color */
+    fg0:     @text;
 
-    accent-color:     @gruvbox-light-gray; /* hovered over list tile */
-    urgent-color:     @gruvbox-light-red-dark;
+    accent-color:     @hover-tile; /* hovered over list tile */
+    urgent-color:     @hover-tile;
 
     background-color:   transparent;
     text-color:         @fg0; /* text color */
