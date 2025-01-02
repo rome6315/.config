@@ -35,7 +35,7 @@ elif [[ "$1" == "Purple Abyss" ]]; then
 
 elif [[ "$1" == "Mugetsu" ]]; then
   $scripts/wallpaper_theme.sh "mugetsu.jpg"
-  $scripts/waybar_theme.sh "mugetsu"
+  $scripts/waybar_theme.sh "mugetsu2" # regular 'mugetsu' has some corners boxed some rounded
   $scripts/hyprland_theme.sh "mugetsu"
   $scripts/kitty_theme.sh "Mugetsu"
   $scripts/starship_theme.sh "mugetsu"
