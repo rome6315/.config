@@ -48,6 +48,11 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 ##### END KEYBINDS #####
 
+##### CASE INSENSITIVE #####
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # 'downloads' will correct itself to 'Downloads' when pressing tab
+##### END CASE INSENSITIVE #####
+
 
 ##### HISTORY SETTINGS #####
 HISTSIZE=10000              # The maximum number of history entries to keep in memory
