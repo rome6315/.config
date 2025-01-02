@@ -29,7 +29,7 @@ window {
     location:   center;
     width:      900px;
     border: 2px solid;
-    border-radius: 15px 0px 15px 0px;
+    border-radius: 15px;
     border-color: @accent-color;
 
     background-color:   @bg0;
