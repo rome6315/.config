@@ -14,6 +14,6 @@ include current-theme.conf # allows for theme switcher to work since it changes 
 
 
 # BEGIN_KITTY_THEME
-# Purple Abyss
+# Gruvbox Light
 include current-theme.conf
 # END_KITTY_THEME

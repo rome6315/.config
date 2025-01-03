@@ -27,7 +27,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.config/ --work-tree=$HOME' #bare git
 
 alias spacehog='du -Sh | sort -rh | head -10' #display top 10 directories that take up most space
 
-alias nnn='nnn -C' # start nnn using terminals 8 colors
+alias mem='ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head' # list programs using the most ram and cpu
 
 # Changing "ls" to "eza", got these from DistroTube
 alias ls='eza -la --color=always --group-directories-first --icons=always' # my preferred listing
