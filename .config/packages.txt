@@ -82,6 +82,7 @@ papirus-icon-theme
 pavucontrol
 pcmanfm
 picom-git
+piper
 pipes.sh
 pipewire
 pipewire-alsa
@@ -97,6 +98,7 @@ qemu-desktop
 qt5-quickcontrols2
 qtile
 qtile-extras-git
+radeontop
 ripgrep
 rofi-wayland
 sddm
@@ -107,7 +109,7 @@ starship
 steam
 swaync
 swww
-timeshift-bin
+timeshift
 traceroute
 trashy
 trashy-debug
@@ -162,7 +164,6 @@ pistol-bin
 pistol-bin-debug
 python-pywal16
 qtile-extras-git
-timeshift-bin
 trashy
 trashy-debug
 ttf-times-new-roman
