@@ -100,10 +100,6 @@ map au unarchive
 
 # Basic Functions
 map . set hidden!
-map dd trash
-map u restore 
-map dr restore_all
-map de empty_trash
 map p paste
 map x cut
 map y copy
@@ -112,6 +108,12 @@ map R reload
 map mf mkfile
 map md mkdir
 map C clear
+
+# trash keybinds
+map dd trash
+map u restore 
+map dr restore_all
+map de empty_trash
 
 # Movement
 map gh cd ~/
