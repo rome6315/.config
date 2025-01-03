@@ -25,7 +25,7 @@ elif [[ "$1" == "Peaceful Pond" ]]; then
 
 elif [[ "$1" == "Purple Abyss" ]]; then
   $scripts/wallpaper_theme.sh "purple-abyss.jpg"
-  $scripts/waybar_theme.sh "purple_abyss"
+  $scripts/waybar_theme.sh "purple_abyss2" # regular 'purple_abyss' uses the more squared borders
   $scripts/hyprland_theme.sh "purple_abyss"
   $scripts/kitty_theme.sh "Purple Abyss"
   $scripts/starship_theme.sh "purple_abyss"
