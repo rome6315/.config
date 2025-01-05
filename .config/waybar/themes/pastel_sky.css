@@ -5,8 +5,8 @@
 @define-color text2 #DFA7BF; /* text color for red/pink modules */
 @define-color shadow1 rgba(0, 0, 0, 0.45); /* this goes first in the box shadow color definition */ 
 @define-color shadow2 rgba(0, 0, 0, 0.2); /* this goes second in the box shadow color definition */
-@define-color focused #e6bacd; /* color for focused workspace */
-@define-color button #DFA7BF; /* color for workspace buttons */
+@define-color non-active #f7e9ef; /* color for non-active workspace */
+@define-color button #DFA7BF; /* color for active workspace buttons */
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
@@ -27,7 +27,7 @@ window#waybar {
 
 #workspaces button {
     padding: 5px;
-    color: @button;
+    color: @non-active;
     margin-right: 5px;
 }
 

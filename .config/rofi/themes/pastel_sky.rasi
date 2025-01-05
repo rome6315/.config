@@ -5,6 +5,7 @@
     search-list:     #608EC4; /* search bar and list tile color */
     text:          #DFA7BF; /* text color */
     hover-tile:         #ffd5e6; /* hovered over list tile */
+    border:	#608ec4; /* border around main window */
 
     /* Map the Peaceful Pond colors to the Rofi variables */
     bg0:     @overall-bg; /* overall (deepest) bg color */
@@ -25,8 +26,9 @@
 window {
     location:   center;
     width:      900px;
+    border: 2px solid;
     border-radius: 15px;
-    border-color: @accent-color;
+    border-color: @border;
 
     background-color:   @bg0;
     padding: 20px;

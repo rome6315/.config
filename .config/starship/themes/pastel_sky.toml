@@ -1,25 +1,25 @@
 format = """
-[░▒▓](#edccda)\
-[](#edccda)\
+[░▒▓](#85a8d2)\
+[](#85a8d2)\
 $os\
 $username\
-[](bg:#e6bacd fg:#edccda)\
+[](bg:#739bcb fg:#85a8d2)\
 $directory\
-[](fg:#e6bacd bg:#DFA7BF)\
+[](fg:#739bcb bg:#608EC4)\
 $git_branch\
 $git_status\
-[](bg:#DFA7BF fg:#DFA7BF)\
-[ ](fg:#DFA7BF)\
+[](bg:#608EC4 fg:#608EC4)\
+[ ](fg:#608EC4)\
 """
 
 [username]
 show_always = true
-style_user = "bg:#edccda fg:#608EC4"
-style_root = "bg:#edccda"
+style_user = "bg:#85a8d2 fg:#DFA7BF"
+style_root = "bg:#85a8d2"
 format = '[  $user ]($style)'
  
 [directory]
-style = "bg:#e6bacd fg:#608EC4"
+style = "bg:#739bcb fg:#DFA7BF"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -30,9 +30,9 @@ error_symbol = "[✗](bold red)"
 
 [git_branch]
 symbol = ""
-style = "bg:#DFA7BF fg:#608EC4"
+style = "bg:#608ec4 fg:#DFA7BF"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#DFA7BF fg: #608EC4"
+style = "bg:#DFA7BF fg: #DFA7BF"
 format = '[$all_status$ahead_behind ]($style)'

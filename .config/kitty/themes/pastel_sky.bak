@@ -28,3 +28,36 @@ color6       #DFA7BF
 color14      #DFA7BF
 color7       #c3c3c6
 color15      #c3c3c6
+
+
+
+
+
+
+
+foreground         #DFA7BF
+background         #739bcb
+cursor             #c3c3c6
+
+
+active_border_color   #DFA7BF
+
+color0       #ffeef5
+color8       #c3c3c6
+color1       #DFA7BF
+color9       #DFA7BF
+color2       #DFA7BF
+color10      #DFA7BF
+color3       #DFA7BF
+color11      #DFA7BF
+color4       #DFA7BF
+color12      #DFA7BF
+color5       #DFA7BF
+color13      #DFA7BF
+color6       #DFA7BF
+color14      #DFA7BF
+color7       #DFA7BF
+color15      #DFA7BF
+
+
+#608EC4
