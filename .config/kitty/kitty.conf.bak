@@ -5,12 +5,9 @@ font_family      Hack Nerd Font
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
-font_size 11.0
+font_size 11.5
 
 allow_remote_control yes
-
-
-include current-theme.conf # allows for theme switcher to work since it changes current-theme.conf
 
 
 # BEGIN_KITTY_THEME

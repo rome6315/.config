@@ -1,6 +1,7 @@
 7zip
 alacritty
 amd-ucode
+amdvlk
 aura
 baobab
 base
@@ -79,6 +80,7 @@ openbsd-netcat
 openvpn
 os-prober
 papirus-icon-theme
+partitionmanager
 pavucontrol
 pcmanfm
 picom-git
@@ -127,12 +129,14 @@ visual-studio-code-bin-debug
 vlc
 volumeicon
 vulkan-radeon
+vulkan-tools
 waybar
 wget
 whois
 wireless_tools
 wireplumber
 wl-clipboard
+woeusb
 wqy-zenhei
 xclip
 xdg-desktop-portal-hyprland
@@ -171,5 +175,6 @@ uwsm
 vesktop-bin
 visual-studio-code-bin
 visual-studio-code-bin-debug
+woeusb
 youtube-music-bin
 youtube-music-bin-debug

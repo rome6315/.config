@@ -1,0 +1,164 @@
+@define-color transparent rgba(235, 219, 178, 0); /* transparent waybar */
+@define-color bg #608EC4; /* background color for the blue modules */ 
+@define-color bg2 #DFA7BF; /* background color for the red-pink modules */ 
+@define-color text #608ec4; /* text/icon color for blue modules */ 
+@define-color text2 #DFA7BF; /* text color for red/pink modules */
+@define-color shadow1 rgba(0, 0, 0, 0.45); /* this goes first in the box shadow color definition */ 
+@define-color shadow2 rgba(0, 0, 0, 0.2); /* this goes second in the box shadow color definition */
+@define-color focused #e6bacd; /* color for focused workspace */
+@define-color button #DFA7BF; /* color for workspace buttons */
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+   /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
+    font-family: Hack Nerd Font;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: @transparent; 
+    border-radius: 5px;
+}
+
+#workspaces button.active {
+    color: @button;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: @button;
+    margin-right: 5px;
+}
+
+#workspaces button.focused {
+    color: @bg;
+    background: @focused;
+    border-radius: 10px;
+}
+
+#workspaces {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
+    border-radius: 12px;
+    background-color: @bg;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#clock {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
+    border-radius: 12px;
+    color: @text2;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+}
+
+
+#memory {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
+    border-radius: 12px;
+    background-color: @bg2;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#network {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
+    border-radius: 12px;
+    background-color: @bg;
+    color: @text2;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#pulseaudio {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
+    border-radius: 12px;
+    background-color: @bg2;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#pulseaudio.muted {
+    background-color: @bg;
+}
+
+#temperature {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
+    border-radius: 12px;
+    background-color: @bg;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-updates {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
+    border-radius: 12px;
+    color: @text2;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+#custom-notification {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
+    color: @text;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+#custom-powermenu {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
+    border-radius: 12px;
+    background-color: @bg2;
+    color: @text;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-dotfiles {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
+    border-radius: 12px;
+    color: @text;
+    background-color: @bg2;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

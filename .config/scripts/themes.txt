@@ -2,3 +2,4 @@ Gruvbox Light
 Peaceful Pond
 Purple Abyss
 Mugetsu
+Pastel Sky
