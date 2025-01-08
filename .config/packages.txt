@@ -16,7 +16,6 @@ cava
 clang
 cmatrix
 conky
-discord-canary
 dnsmasq
 dunst
 efibootmgr
@@ -25,6 +24,7 @@ fd
 ffmpegthumbnailer
 firefox
 fish
+font-manager
 fzf
 git
 grim
@@ -60,6 +60,7 @@ linux
 linux-firmware
 linux-headers
 lshw
+lutris
 lxappearance
 magic-wormhole
 man-db
@@ -131,14 +132,22 @@ volumeicon
 vulkan-radeon
 vulkan-tools
 waybar
+waybar-module-pacman-updates-git
 wget
 whois
+wine
+wine-gecko
+wine-mono
+winegui-bin
+winegui-bin-debug
+winetricks
 wireless_tools
 wireplumber
 wl-clipboard
 woeusb
 wqy-zenhei
 xclip
+xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-utils
 xf86-video-amdgpu
@@ -157,7 +166,6 @@ zsh-syntax-highlighting
 aura
 brave-bin
 cava
-discord-canary
 hyprshade
 hyprshot
 iwgtk
@@ -175,6 +183,9 @@ uwsm
 vesktop-bin
 visual-studio-code-bin
 visual-studio-code-bin-debug
+waybar-module-pacman-updates-git
+winegui-bin
+winegui-bin-debug
 woeusb
 youtube-music-bin
 youtube-music-bin-debug
