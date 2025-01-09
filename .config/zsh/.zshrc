@@ -17,6 +17,8 @@ setopt appendhistory # append to history instead of overwrite/prepend
 #just incase :)
 alias vim='nvim' 
 
+alias hx='helix' # helix alias
+
   # chnaging grep to ripgrep
 alias grep='rg'
 
