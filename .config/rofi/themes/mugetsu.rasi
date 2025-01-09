@@ -28,7 +28,7 @@
 window {
     location:   center;
     width:      900px;
-    border: 2px solid;
+    border: 3px solid;
     border-radius: 15px;
     border-color: @accent-color;
 
@@ -86,7 +86,6 @@ listview {
     spacing:                     15px;
     margin:                      0px;
     padding:                     10px;
-    border:                      0px solid;
     cursor:                      "default";
 }
 
@@ -105,6 +104,9 @@ element {
 element normal normal {
     text-color: @fg0;
     background-color: @bg1;
+    border:                      2px solid;
+    border-radius:		 15px;
+    border-color:		 @accent-color;
 }
 
 element alternate normal {

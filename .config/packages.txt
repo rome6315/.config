@@ -9,7 +9,6 @@ base-devel
 bat
 bind
 bitwarden
-brave-bin
 bridge-utils
 calibre
 cava
@@ -31,6 +30,7 @@ grim
 grub
 gst-plugin-pipewire
 gthumb
+helix
 htop
 hypridle
 hyprland
@@ -164,7 +164,6 @@ zsh-autosuggestions
 zsh-history-substring-search
 zsh-syntax-highlighting
 aura
-brave-bin
 cava
 hyprshade
 hyprshot

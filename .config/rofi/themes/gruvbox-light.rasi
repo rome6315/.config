@@ -31,6 +31,7 @@
 window {
     location:   center;
     width:      900px;
+    border: 2px solid;
     border-radius: 15px;
     border-color: @accent-color;
 
@@ -94,9 +95,9 @@ element {
     spacing:                     15px;
     margin:                      0px;
     padding:                     20px 10px;
-    border:                      1px solid;
+    border:                      2px solid;
     border-radius:		 15px;
-    border-color:		 @bg1;
+    border-color:		 @accent-color;
     orientation:                 vertical;
     cursor:                      pointer;
 }
