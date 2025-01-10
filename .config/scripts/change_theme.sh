@@ -53,7 +53,15 @@ elif [[ "$1" == "Pastel Sky" ]]; then
   $scripts/rofi_theme.sh "pastel_sky"
   $scripts/dunst_theme.sh "pastel_sky"
 
-
+elif [[ "$1" == "Pain" ]]; then
+  $scripts/wallpaper_theme.sh "pain_tongue.jpg"
+  $scripts/waybar_theme.sh "pain"
+  $scripts/hyprland_theme.sh "pain"
+  $scripts/kitty_theme.sh "Pain"
+  $scripts/starship_theme.sh "pain"
+  $scripts/cava_theme.sh "pain"
+  $scripts/rofi_theme.sh "pain"
+  $scripts/dunst_theme.sh "pain"
 fi
 
 notify-send -t 3000 "Changed theme to $1" # let user know theme has been changed, erase notification after 3 seconds
