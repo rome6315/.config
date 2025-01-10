@@ -1,0 +1,142 @@
+@define-color transparent rgba(235, 219, 178, 0); /* transparent waybar */
+@define-color bg rgba(22,15,27,0.85); /* background color for the modules */ 
+@define-color pain-red #9E3357;
+@define-color pain-blue #33509F;
+@define-color pain-green #5D9B7F;
+@define-color pain-pink #BF3A9A;
+@define-color pain-indigo #6e5d8e;
+@define-color pain-purple #916097;
+@define-color pain-yellow #F3D9A1;
+@define-color pain-orange #8A3F32;
+@define-color button #9d9ca1; /* color for workspace buttons */
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+   /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
+    font-family: Hack Nerd Font;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: @transparent; 
+    border-radius: 5px;
+}
+
+#workspaces button.active {
+    color: @pain-indigo;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: @button;
+    margin-right: 5px;
+}
+
+#workspaces button.focused {
+    color: @bg;
+    background: @focused;
+    border-radius: 10px;
+}
+
+#workspaces {
+    border: 2px solid;
+    border-color: @pain-indigo;
+    background-color: @bg;
+    color: @pain-indigo;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#clock {
+    border: 2px solid;
+    border-color: @pain-orange;
+    color: @pain-orange;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+}
+
+
+#memory {
+    border: 2px solid;
+    border-color: @pain-pink;
+    background-color: @bg;
+    color: @pain-pink;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#network {
+    border: 2px solid;
+    border-color: @pain-green;
+    background-color: @bg;
+    color: @pain-green;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#pulseaudio {
+    border: 2px solid;
+    border-color: @pain-yellow;
+    background-color: @bg;
+    color: @pain-yellow;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#pulseaudio.muted {
+    background-color: @bg;
+}
+
+#custom-updates {
+    border: 2px solid;
+    border-color: @pain-purple;
+    color: @pain-purple;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+#custom-powermenu {
+    border: 2px solid;
+    border-color: @pain-red;
+    color: @pain-red;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-dotfiles {
+    border: 2px solid;
+    border-color: @pain-blue;
+    color: @pain-blue;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
