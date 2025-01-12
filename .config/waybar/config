@@ -44,7 +44,7 @@
     // date and time
     "clock": {
         // "timezone": "America/New_York",
-        "format": "{:%I:%M %p - %a, %b %d}",
+        "format": "{:%I:%M %p - %b %d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     },
     
