@@ -78,6 +78,7 @@ npm
 nwg-dock-hyprland
 nwg-look
 openbsd-netcat
+openrgb
 openvpn
 os-prober
 papirus-icon-theme
