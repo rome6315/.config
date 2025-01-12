@@ -1,6 +1,6 @@
 #!/bin/bash
 
-scripts=$HOME/.config/scripts # set scripts directory
+scripts=$HOME/.config/scripts/theme-switcher # set scripts directory
 
 # for each theme, run the necessary scripts and pass the necessary parameter
 if [[ "$1" == "Gruvbox Light" ]]; then
