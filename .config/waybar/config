@@ -62,6 +62,11 @@
         "format-icons": ["", "", ""],
         "on-click": "conky"
     },
+
+    "tray": {
+    "icon-size": 21,
+    "spacing": 10
+},
    
     // show or change volume output/input level
     "pulseaudio": {

@@ -103,7 +103,8 @@ qtile
 qtile-extras-git
 radeontop
 ripgrep
-rofi-wayland
+rofi-git
+rofi-git-debug
 sddm
 shellcheck
 slurp
@@ -175,6 +176,8 @@ pistol-bin
 pistol-bin-debug
 python-pywal16
 qtile-extras-git
+rofi-git
+rofi-git-debug
 trashy
 trashy-debug
 ttf-times-new-roman
