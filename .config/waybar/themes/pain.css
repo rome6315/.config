@@ -1,5 +1,5 @@
 @define-color transparent rgba(235, 219, 178, 0); /* transparent waybar */
-@define-color bg rgba(22,15,27,0.85); /* background color for the modules */ 
+@define-color bg rgba(22,15,27,1); /* background color for the modules */ 
 @define-color pain-red #9E3357;
 @define-color pain-blue #33509F;
 @define-color pain-green #5D9B7F;
@@ -41,7 +41,9 @@ window#waybar {
 
 #workspaces {
     border: 2px solid;
-    border-color: @pain-indigo;
+    /*border-color: @pain-indigo;*/
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
+        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
     background-color: @bg;
     color: @pain-indigo;
     margin-top: 5px;
@@ -53,7 +55,9 @@ window#waybar {
 
 #clock {
     border: 2px solid;
-    border-color: @pain-orange;
+    /*border-color: @pain-orange;*/
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
+        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
     color: @pain-orange;
     background-color: @bg;
     margin-top: 5px;
@@ -66,7 +70,9 @@ window#waybar {
 
 #memory {
     border: 2px solid;
-    border-color: @pain-pink;
+    /*border-color: @pain-pink;*/
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
+        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
     background-color: @bg;
     color: @pain-pink;
     margin-top: 5px;
@@ -78,7 +84,9 @@ window#waybar {
 
 #network {
     border: 2px solid;
-    border-color: @pain-green;
+    /*border-color: @pain-green;*/
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
+        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
     background-color: @bg;
     color: @pain-green;
     margin-top: 5px;
@@ -90,7 +98,9 @@ window#waybar {
 
 #pulseaudio {
     border: 2px solid;
-    border-color: @pain-yellow;
+    /*border-color: @pain-yellow;*/
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
+        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
     background-color: @bg;
     color: @pain-yellow;
     margin-top: 5px;
@@ -107,7 +117,9 @@ window#waybar {
 
 #custom-updates {
     border: 2px solid;
-    border-color: @pain-purple;
+    /*border-color: @pain-purple;*/
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
+        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
     color: @pain-purple;
     padding-left: 10px;
     padding-right: 5px;
@@ -119,7 +131,9 @@ window#waybar {
 
 #custom-powermenu {
     border: 2px solid;
-    border-color: @pain-red;
+    /*border-color: @pain-red;*/
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
+        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
     color: @pain-red;
     background-color: @bg;
     margin-top: 5px;
@@ -130,8 +144,11 @@ window#waybar {
 }
 
 #custom-dotfiles {
+    /* border: 2px solid;*/
+    /*border-color: @pain-blue;*/ 
     border: 2px solid;
-    border-color: @pain-blue;
+    border-image: linear-gradient(20deg, @pain-red, @pain-blue, @pain-green, @pain-pink, 
+        @pain-indigo, @pain-purple, @pain-yellow, @pain-orange) 1;
     color: @pain-blue;
     background-color: @bg;
     margin-top: 5px;

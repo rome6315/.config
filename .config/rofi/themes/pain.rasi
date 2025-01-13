@@ -31,10 +31,12 @@
 window {
     location:   center;
     width:      900px;
-    border: 2px solid;
-    border-color: @window-border;
+    /*border: 2px solid;*/
+    /*border-color: @window-border;*/
+    background-image: linear-gradient(20deg, #9e3357, #33509f, #5d9b7f, #bf3a9a,
+    #6e5d8e, #916097, #f3d9a1);
 
-    background-color:   @bg0;
+    /*background-color:   @bg0;*/
     padding: 20px;
 }
 
