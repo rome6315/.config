@@ -64,4 +64,7 @@ elif [[ "$1" == "Pain" ]]; then
   $scripts/dunst_theme.sh "pain"
 fi
 
+
+echo "$1" > $scripts/current_theme.txt # write the current theme to current_theme.txt so it can be used in the waybar theme module
+
 notify-send -t 3000 "Changed theme to $1" # let user know theme has been changed, erase notification after 3 seconds

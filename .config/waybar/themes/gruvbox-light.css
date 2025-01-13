@@ -162,3 +162,15 @@ window#waybar {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+#custom-theme {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 0px -3px 0px inset;
+    border-radius: 12px;
+    color: @text;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

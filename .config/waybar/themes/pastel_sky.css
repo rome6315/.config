@@ -6,7 +6,7 @@
 @define-color shadow1 rgba(0, 0, 0, 0.45); /* this goes first in the box shadow color definition */ 
 @define-color shadow2 rgba(0, 0, 0, 0.2); /* this goes second in the box shadow color definition */
 @define-color non-active #f7e9ef; /* color for non-active workspace */
-@define-color button #DFA7BF; /* color for active workspace buttons */
+@define-color button #608ec4; /* color for active workspace buttons */
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
@@ -40,7 +40,7 @@ window#waybar {
 #workspaces {
     box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
     border-radius: 12px;
-    background-color: @bg;
+    background-color: @bg2;
     color: @text;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -107,7 +107,7 @@ window#waybar {
     box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
     border-radius: 12px;
     background-color: @bg;
-    color: @text;
+    color: @text2;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 15px;
@@ -156,6 +156,18 @@ window#waybar {
     border-radius: 12px;
     color: @text;
     background-color: @bg2;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-theme {
+    box-shadow: 1 1 2 0.5px @shadow1 , @shadow2 -5px -5px 1px inset;
+    border-radius: 12px;
+    color: @text2;
+    background-color: @bg;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 15px;

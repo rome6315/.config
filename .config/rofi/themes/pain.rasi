@@ -33,7 +33,7 @@ window {
     width:      900px;
     /*border: 2px solid;*/
     /*border-color: @window-border;*/
-    background-image: linear-gradient(20deg, #9e3357, #33509f, #5d9b7f, #bf3a9a,
+    background-image: linear-gradient(45deg, #9e3357, #33509f, #5d9b7f, #bf3a9a,
     #6e5d8e, #916097, #f3d9a1);
 
     /*background-color:   @bg0;*/

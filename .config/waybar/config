@@ -10,9 +10,9 @@
     "output": ["DP-1", "DP-2"],
 
     // Choose the order of the modules
-    "modules-left": ["custom/powermenu", "network", "custom/dotfiles"],
+    "modules-left": ["custom/powermenu", "network", "custom/dotfiles", "custom/theme"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["memory", "custom/updates", "pulseaudio", "clock"],
+    "modules-right": ["temperature", "memory", "custom/updates", "pulseaudio", "clock"],
 
     // Modules configuration
      "hyprland/workspaces": {
@@ -57,10 +57,9 @@
     //cpu temp
     "temperature": {
         "critical-threshold": 80,
-        "format": "{temperatureC}°C {icon}",
+        "format": "{icon} {temperatureC}°C",
         "tooltip-format": "CPU Temp",
-        "format-icons": ["", "", ""],
-        "on-click": "conky"
+        "format-icons": ["", "", ""],
     },
 
     "tray": {
@@ -159,5 +158,13 @@
     "interval": 10,
     "exec": "~/.config/waybar/scripts/dotfile_status.sh 2> /dev/null",
     "return-type": "json"
+  },
+
+// display the current theme being used from the theme switcher
+  "custom/theme": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/theme.sh 2> /dev/null",
+    "return-type": "json",
+    "on-click": "~/.config/scripts/theme-switcher/rofi_select_theme.sh"
   }
 }
