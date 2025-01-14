@@ -5,7 +5,7 @@ Arch Linux - Hyprland
 Colors grabbed using pywal16
 
 *Gruvbox Light Theme*
-![Screenshot](Pictures/gruvbox_light_rice.png)
+![Screenshot](Pictures/gruvbox-rice/gruvbox_light_rice.png)
 *Peaceful Pond Theme*
 ![Screenshot](Pictures/peaceful_pond/peaceful_pond_rice.png)
 *Purple Abyss Theme*
