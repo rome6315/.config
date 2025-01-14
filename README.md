@@ -4,13 +4,15 @@ Arch Linux - Hyprland
 
 Colors grabbed using pywal16
 
-Theme Switching Menu powered by rofi
-![Screenshot](Pictures/theme_switcher.png)
-Peaceful Pond Theme
-![Screenshot](Pictures/peaceful_pond/peaceful_pond.png)
-Gruvbox Theme
-![Screenshot](Pictures/gruvbox-rice/gruvbox-rice.png)
-Purple Abyss Theme
+*Gruvbox Light Theme*
+![Screenshot](Pictures/gruvbox_light_rice.png)
+*Peaceful Pond Theme*
+![Screenshot](Pictures/peaceful_pond/peaceful_pond_rice.png)
+*Purple Abyss Theme*
 ![Screenshot](Pictures/purple_abyss/purple_abyss_rice.png)
-Mugetsu (Bleach) Theme
-![Screenshot](Pictures/mugetsu/mugetsu-rice.png)
+*Mugetsu (Bleach) Theme*
+![Screenshot](Pictures/mugetsu/mugetsu_rice.png)
+*Pastel Sky Theme*
+![Screenshot](Pictures/pastel_sky/pastel_sky_rice.png)
+*Pain (Naruto) Theme*
+![Screenshot](Pictures/pain/pain_rice.png)
