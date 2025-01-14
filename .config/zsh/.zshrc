@@ -4,6 +4,7 @@
 export TERM=xterm-256color
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml # change starship config location
 export EDITOR=nvim # neovim
+export XDG_PICTURES_DIR=$HOME/Pictures/
 ##### END ENVIRONMENT VARS #####
 
 ##### OPTIONS #####
