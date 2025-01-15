@@ -10,6 +10,7 @@ bat
 bind
 bitwarden
 bridge-utils
+btop
 calibre
 cava
 clang

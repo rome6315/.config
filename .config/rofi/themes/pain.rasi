@@ -37,7 +37,12 @@ window {
     #6e5d8e, #916097, #f3d9a1);
 
     /*background-color:   @bg0;*/
-    padding: 20px;
+    padding: 3px;
+}
+
+mainbox {
+    background-color:    @bg0; /* Solid background for the inner content */
+    padding:             10px;
 }
 
 inputbar {
@@ -56,11 +61,12 @@ prompt, element-icon, element-text {
 entry {
   enabled: true;
   placeholder: "Search";
-  placeholder-color: @text-color;
+  placeholder-color: @window-border;
+  text-color: @window-border;
 }
 
 prompt {
-    text-color: @accent-color;
+    text-color: @window-border;
 }
 
 textbox {
