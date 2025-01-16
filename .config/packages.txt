@@ -88,7 +88,6 @@ partitionmanager
 pavucontrol
 pcmanfm
 picom-git
-piper
 pipes.sh
 pipewire
 pipewire-alsa
