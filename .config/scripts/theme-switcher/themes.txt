@@ -1,4 +1,4 @@
-Gruvbox Light
+Gruvbox Dark
 Peaceful Pond
 Purple Abyss
 Mugetsu

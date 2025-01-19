@@ -13,6 +13,16 @@ if [[ "$1" == "Gruvbox Light" ]]; then
   $scripts/rofi_theme.sh "gruvbox-light"
   $scripts/dunst_theme.sh "gruvbox-light"
 
+elif [[ "$1" == "Gruvbox Dark" ]]; then
+  $scripts/wallpaper_theme.sh "gruvbox-chinatown.png"
+  $scripts/waybar_theme.sh "gruvbox-dark"
+  $scripts/hyprland_theme.sh "gruvbox-dark"
+  $scripts/kitty_theme.sh "Gruvbox Material Dark Soft"
+  $scripts/starship_theme.sh "gruvbox-dark"
+  $scripts/cava_theme.sh "gruvbox-dark"
+  $scripts/rofi_theme.sh "gruvbox-dark"
+  $scripts/dunst_theme.sh "gruvbox-dark"
+
 elif [[ "$1" == "Peaceful Pond" ]]; then
   $scripts/wallpaper_theme.sh "peaceful_pond.png"
   $scripts/waybar_theme.sh "peaceful_pond"

@@ -55,6 +55,7 @@ libguestfs
 libpulse
 libreoffice-still
 librewolf-bin
+librewolf-bin-debug
 lightdm
 lightdm-gtk-greeter
 linux
@@ -123,6 +124,7 @@ ttf-fira-code
 ttf-font-awesome
 ttf-times-new-roman
 unzip
+upscayl-bin
 uwsm
 vesktop-bin
 vim
@@ -172,6 +174,7 @@ hyprshade
 hyprshot
 iwgtk
 librewolf-bin
+librewolf-bin-debug
 picom-git
 pipes.sh
 pistol-bin
@@ -183,6 +186,7 @@ rofi-git-debug
 trashy
 trashy-debug
 ttf-times-new-roman
+upscayl-bin
 uwsm
 vesktop-bin
 visual-studio-code-bin

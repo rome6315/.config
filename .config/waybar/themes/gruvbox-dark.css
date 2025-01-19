@@ -1,0 +1,169 @@
+@define-color transparent rgba(235, 219, 178, 0); /* transparent waybar */
+@define-color bg #32302f; /* background color for the modules */ 
+@define-color gruvbox-red #ea6962;
+@define-color gruvbox-blue #7daea3;
+@define-color gruvbox-green #a9b665;
+@define-color gruvbox-purple #606A86;
+@define-color gruvbox-yellow #d8a657;
+@define-color gruvbox-orange #e78a4e;
+@define-color gruvbox-cyan #89b482;
+@define-color gruvbox-magenta #d3869b;
+@define-color gruvbox-pink #CB6F75;
+@define-color gruvbox-white #d4be98;
+@define-color button #a89984; /* color for workspace buttons */
+
+@define-color pain-red #9E3357;
+@define-color pain-blue #33509F;
+@define-color pain-green #5D9B7F;
+@define-color pain-pink #BF3A9A;
+@define-color pain-bright-pink #FCB4F6;
+@define-color pain-indigo #6e5d8e;
+@define-color pain-purple #916097;
+@define-color pain-yellow #F3D9A1;
+@define-color pain-orange #8A3F32;
+@define-color pain-bright-orange #BA463D;
+@define-color pain-white #c4c3c6;
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+   /* font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
+    font-family: Hack Nerd Font;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+window#waybar {
+    background-color: @transparent; 
+    border-radius: 5px;
+}
+
+#workspaces button.active {
+    color: @gruvbox-blue;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: @button;
+    margin-right: 5px;
+}
+
+#workspaces button.focused {
+    color: @bg;
+    background: @focused;
+    border-radius: 10px;
+}
+
+#workspaces {
+    border-radius: 3px;
+    background-color: @bg;
+    color: @pain-indigo;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#clock {
+    border-radius: 3px;
+    color: @gruvbox-pink;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+}
+
+#temperature {
+    border-radius: 3px;
+    background-color: @bg;
+    color: @gruvbox-orange;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#memory {
+    border-radius: 3px;
+    background-color: @bg;
+    color: @gruvbox-magenta;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#network {
+    border-radius: 3px;
+    background-color: @bg;
+    color: @gruvbox-green;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#pulseaudio {
+    border-radius: 3px;
+    background-color: @bg;
+    color: @gruvbox-yellow;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#pulseaudio.muted {
+    background-color: @bg;
+}
+
+#custom-updates {
+    border-radius: 3px;
+    color: @gruvbox-purple;
+    padding-left: 10px;
+    padding-right: 5px;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+
+#custom-powermenu {
+    border-radius: 3px;
+    color: @gruvbox-red;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-dotfiles {
+    border-radius: 3px;
+    color: @gruvbox-blue;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-theme {
+    border-radius: 3px;
+    color: @gruvbox-white;
+    background-color: @bg;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
