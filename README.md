@@ -1,3 +1,5 @@
+!!Moved to rome6315/dotfiles repository
+
 Arch Linux - Hyprland
 
 *NOTE: If you do not use hyprshade (or shaders in general) to enhance color vibrance, do not expect the hex colors in these files to look like this on your screen(s).*
